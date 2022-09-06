@@ -3,7 +3,7 @@
  # @Author: dingpanfeng
  # @Date: 2022-09-06 22:33:46
  # @LastEditors: dingpanfeng
- # @LastEditTime: 2022-09-06 22:35:05
+ # @LastEditTime: 2022-09-07 00:23:50
  # @FilePath: /dingpanfeng.github.io/deploy.sh
 ### 
 
@@ -24,7 +24,7 @@ git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io
-git push -f git@github.com:dingpanfeng/dingpanfeng.github.io.git master
+git push -f git@github.com:dingpanfeng/dingpanfeng.github.io.git master:gh-pages
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
