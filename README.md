@@ -1,2 +1,0 @@
-# dora-vuepress
-dora-vuepress
