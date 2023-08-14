@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Hybrid简介 | 黑马程序员</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="前端">
+    
+    <link rel="preload" href="/assets/css/0.styles.af94bc93.css" as="style"><link rel="preload" href="/assets/js/app.fdac62c2.js" as="script"><link rel="preload" href="/assets/js/2.5b116229.js" as="script"><link rel="preload" href="/assets/js/1.59fbfee6.js" as="script"><link rel="preload" href="/assets/js/29.d371acde.js" as="script"><link rel="prefetch" href="/assets/js/10.cb436ae5.js"><link rel="prefetch" href="/assets/js/11.a0a1e346.js"><link rel="prefetch" href="/assets/js/12.8376ce37.js"><link rel="prefetch" href="/assets/js/13.03f419a6.js"><link rel="prefetch" href="/assets/js/14.db19dc67.js"><link rel="prefetch" href="/assets/js/15.05ac4144.js"><link rel="prefetch" href="/assets/js/16.1a104d45.js"><link rel="prefetch" href="/assets/js/17.ddfb3504.js"><link rel="prefetch" href="/assets/js/18.b434740f.js"><link rel="prefetch" href="/assets/js/19.c832b7a6.js"><link rel="prefetch" href="/assets/js/20.a9c8253c.js"><link rel="prefetch" href="/assets/js/21.3bb9c148.js"><link rel="prefetch" href="/assets/js/22.80bc7a41.js"><link rel="prefetch" href="/assets/js/23.06cbd85c.js"><link rel="prefetch" href="/assets/js/24.bb2a1cc4.js"><link rel="prefetch" href="/assets/js/25.afbc7769.js"><link rel="prefetch" href="/assets/js/26.f0bd9f64.js"><link rel="prefetch" href="/assets/js/27.a524e4da.js"><link rel="prefetch" href="/assets/js/28.d640cfd5.js"><link rel="prefetch" href="/assets/js/3.a996eb40.js"><link rel="prefetch" href="/assets/js/30.1b2dad75.js"><link rel="prefetch" href="/assets/js/31.76af904b.js"><link rel="prefetch" href="/assets/js/32.c54912a4.js"><link rel="prefetch" href="/assets/js/33.b4811a84.js"><link rel="prefetch" href="/assets/js/4.6aaf9938.js"><link rel="prefetch" href="/assets/js/5.bb248bcb.js"><link rel="prefetch" href="/assets/js/6.abc1eab0.js"><link rel="prefetch" href="/assets/js/7.0a0df318.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.5a4296f1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.af94bc93.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">黑马程序员</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  小程序开发
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  小程序开发
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="hybrid简介"><a href="#hybrid简介" class="header-anchor">#</a> Hybrid简介</h2> <p><strong>混合 App （hybrid App）顾名思义就是原生 App 与 Web App 的结合</strong>。它的壳是原生 App容器，但是里面放的是网页。 主要原理就是将App的一部分需要动态变动的内容通过H5来实现，通过系统提供的网页渲染控件<code>WebView (Android)或WKWebView（iOS）</code>来加载，也可以自己内置一个浏览器内核（微信，UC）；</p> <h3 id="优点"><a href="#优点" class="header-anchor">#</a> 优点</h3> <ul><li>跨平台，开发成本低，Web 技术是跨平台的，开发者只写一次页面，就能支持多个平台；</li> <li>灵活性，混合 App 的灵活性大，很容易集成多种功能，加载外部的 H5 页面，Web 页面可以方便地调用外部的 Web 服务；</li> <li>开发方便，Web 页面的调试和构建，比原生控件简单省时。页面的更新也容易，只要在服务器上发布新版本，触发容器内更新就可以了，无需审核</li></ul> <h3 id="缺点"><a href="#缺点" class="header-anchor">#</a> 缺点</h3> <ul><li>性能差弱网络无网络条件下体验差，不仅不如原生 App，而且由于 WebView 不是全功能浏览器，可能比 Web App 都要慢一些；</li> <li>WebView实质上就是一个浏览器内核，JavaScript依然运行在一个权限受限的沙箱中，对于H5不能实现的功能，都需要原生去做；</li> <li>不适用于一些交互较强或者性能要求较高的 App (比如动画较多就不适合)</li></ul> <h3 id="jsbridge"><a href="#jsbridge" class="header-anchor">#</a> JSBridge</h3> <p>JSBridge 是一种 JS 实现的 Bridge，连接着桥两端的 Native 和 H5。它在 APP 内方便地让 Native 代码通过 WebView 容器与 JavaScript 代码通信，是双向通信的通道。实现原生功能如查看本地相册、打开摄像头、指纹支付等。</p> <p><img src="/hybrid.jpeg" alt="Alt text"></p> <h4 id="h5-调用-native"><a href="#h5-调用-native" class="header-anchor">#</a> H5 调用 Native</h4> <ul><li>Android 和 iOS 都可以通过拦截 URL Scheme 并解析 scheme 来决定是否进行对应的 Native 代码逻辑处理；（ scheme://[path][?query]）</li> <li>重写 prompt，拦截 alert、confirm、prompt、console.log 四个方法，分别被 Webview 的 onJsAlert、onJsConfirm、onConsoleMessage、onJsPrompt 监听</li> <li>注入 API，基于 Webview 提供的能力，我们可以向 Window 上注入对象或方法。JS 通过这个对象或方法进行调用时，执行对应的逻辑操作，可以直接调用 Native 的方法。使用该方式时，JS 需要等到 Native 执行完对应的逻辑后才能进行回调里面的操作。</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ *	获取用户基本信息
+ *
+ * 	exports.getAppUserInfo();
+ *
+ *	return json:
+ *			status 结果状态 int 200 成功  201 失败
+ *			info 结果值 成功 json 失败 空对象
+ *
+ **/</span>
+exports<span class="token punctuation">.</span><span class="token function-variable function">getAppUserInfo</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+	<span class="token comment">//获取用户信息</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> anShuqiForSqWebJS <span class="token operator">===</span> <span class="token string">&quot;undefined&quot;</span> <span class="token operator">||</span> <span class="token keyword">typeof</span> anShuqiForSqWebJS<span class="token punctuation">.</span>getAppUserInfo <span class="token operator">===</span> <span class="token string">&quot;undefined&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+		<span class="token keyword">return</span> <span class="token punctuation">{</span>
+			<span class="token string-property property">'info'</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+			<span class="token literal-property property">status</span><span class="token operator">:</span> <span class="token number">201</span>
+		<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+	<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+
+		<span class="token keyword">var</span> appUserInfo <span class="token operator">=</span> anShuqiForSqWebJS<span class="token punctuation">.</span><span class="token function">getAppUserInfo</span><span class="token punctuation">(</span><span class="token string">&quot;{}&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		appUserInfo <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>appUserInfo<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> info <span class="token keyword">in</span> appUserInfo<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			appUserInfo<span class="token punctuation">[</span>info<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">decodeURIComponent</span><span class="token punctuation">(</span>appUserInfo<span class="token punctuation">[</span>info<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+
+		<span class="token keyword">return</span> <span class="token punctuation">{</span>
+			<span class="token string-property property">'info'</span><span class="token operator">:</span> appUserInfo<span class="token punctuation">,</span>
+			<span class="token literal-property property">status</span><span class="token operator">:</span> <span class="token number">200</span>
+		<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+	<span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">//分享方法</span>
+exports<span class="token punctuation">.</span><span class="token function-variable function">openAppSendShareData</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">jsonData</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">/* &quot;shareUrl&quot;:&quot;&quot; 分享跳转的链接地址
+       &quot;imgUrl&quot;:&quot;&quot; 分享的图片地址
+       &quot;shareTitle&quot;:&quot;&quot; 分享标题
+       &quot;shareContent&quot;:&quot;&quot; 分享描述内容*/</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> anShuqiForSqWebJS <span class="token operator">===</span> <span class="token string">&quot;undefined&quot;</span> <span class="token operator">||</span> anShuqiForSqWebJS<span class="token punctuation">.</span>openAppSendShareData <span class="token operator">==</span> <span class="token keyword">undefined</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">status</span><span class="token operator">:</span> <span class="token number">201</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> anShuqiForSqWebJS<span class="token punctuation">.</span><span class="token function">openAppSendShareData</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>jsonData<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.fdac62c2.js" defer></script><script src="/assets/js/2.5b116229.js" defer></script><script src="/assets/js/1.59fbfee6.js" defer></script><script src="/assets/js/29.d371acde.js" defer></script>
+  </body>
+</html>
