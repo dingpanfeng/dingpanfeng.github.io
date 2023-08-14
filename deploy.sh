@@ -3,7 +3,7 @@
  # @Author: dingpanfeng
  # @Date: 2022-09-06 22:33:46
  # @LastEditors: 丁攀峰 allen@leanktech.com
- # @LastEditTime: 2023-08-14 23:24:41
+ # @LastEditTime: 2023-08-14 23:21:32
  # @FilePath: /dingpanfeng.github.io/deploy.sh
 ### 
 
@@ -19,12 +19,12 @@ cd docs/.vuepress/dist
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
 
-# git init
+git init
 git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io
-git push -f git@github.com:dingpanfeng/dingpanfeng.github.io.git gh-pages
+git push -f git@github.com:dingpanfeng/dingpanfeng.github.io.git master:gh-pages
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
