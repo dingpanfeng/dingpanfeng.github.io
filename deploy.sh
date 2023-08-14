@@ -1,9 +1,9 @@
 #!/usr/bin/env sh
 ###
- # @Author: 丁攀峰 allen@leanktech.com
- # @Date: 2022-09-06 23:53:30
+ # @Author: dingpanfeng
+ # @Date: 2022-09-06 22:33:46
  # @LastEditors: 丁攀峰 allen@leanktech.com
- # @LastEditTime: 2023-05-28 21:06:10
+ # @LastEditTime: 2023-08-14 17:51:11
  # @FilePath: /dingpanfeng.github.io/deploy.sh
 ### 
 
@@ -24,7 +24,7 @@ git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io
-git push -f git@github.com:dingpanfeng/dingpanfeng.github.io.git master:gh-pages
+git push -f git@github.com:dingpanfeng/dingpanfeng.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
