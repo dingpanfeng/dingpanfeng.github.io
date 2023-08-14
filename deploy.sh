@@ -1,9 +1,9 @@
 #!/usr/bin/env sh
 ###
- # @Author: dingpanfeng
- # @Date: 2022-09-06 22:33:46
- # @LastEditors: dingpanfeng
- # @LastEditTime: 2022-09-07 00:23:50
+ # @Author: 丁攀峰 allen@leanktech.com
+ # @Date: 2022-09-06 23:53:30
+ # @LastEditors: 丁攀峰 allen@leanktech.com
+ # @LastEditTime: 2023-05-28 21:06:10
  # @FilePath: /dingpanfeng.github.io/deploy.sh
 ### 
 
